@@ -27,9 +27,17 @@ A simple and beautiful theme for Hugo
 ## Installation
 
 ```bash
-$ git clone https://github.com/varkai/hugo-theme-zozo themes/zozo
+$ git clone https://github.com/nicolgo/hugo-theme-zozo.git themes/zozo
 ```
-
+or use this as [submodule](https://www.atlassian.com/git/tutorials/git-submodule):
+```
+$ git submodule add --depth=1 https://github.com/nicolgo/hugo-theme-zozo.git themes/zozo
+$ git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically)
+```
+then update it with:
+```
+$ git submodule update --remote --merge
+```
 **Important**: Take a look inside the [`exampleSite`](./exampleSite) folder of this theme. You'll find a file called [`config.toml`](./exampleSite/config.toml). To use it, copy the [`config.toml`](./exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change it.
 
 ## ExampleSite
